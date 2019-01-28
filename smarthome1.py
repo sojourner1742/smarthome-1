@@ -18,8 +18,8 @@ from time import sleep
 
 #----------------PubNub Setup----------------#
 pnconfig = PNConfiguration()
-pnconfig.subscribe_key = "sub-c-1575c412-2116-11e8-a7d0-2e884fd949d2"
-pnconfig.publish_key = "pub-c-2d8f55f6-daa7-467b-923b-6a1e6570c9fc"
+pnconfig.subscribe_key = "SUBSCRIBE"
+pnconfig.publish_key = "PUBLISH"
 pnconfig.ssl = False
 pubnub = PubNub(pnconfig)
 #--------------------------------------------#
@@ -29,14 +29,14 @@ pubnub = PubNub(pnconfig)
 
 
 #------------Sensor Declarations-------------#
-#lamp is connected to GPIO4 as an LED
-lamp = LED(4)
+#lamp is connected to GPIO21 as an LED
+lamp = LED(21)
 
-#door sensor is connected to GPIO3 as a Button
-door_sensor = Button(3)
+#door sensor is connected to GPIO20 as a Button
+door_sensor = Button(20)
 
-#light sensor is connected to GPIO14 as a Button
-light = Button(14)
+#light sensor is connected to GPIO20 as a Button
+light = Button(21)
 #--------------------------------------------#
 
 
